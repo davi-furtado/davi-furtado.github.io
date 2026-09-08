@@ -6,12 +6,12 @@ Site pessoal e portfólio.
 
 O site apresenta:
 
-- informações sobre mim
-- tecnologias e ferramentas estudadas
-- projetos desenvolvidos
-- contato e link para o GitHub
-- suporte aos idiomas português e inglês
-- layout responsivo com tema escuro
+- informações sobre mim;
+- tecnologias e ferramentas estudadas;
+- projetos desenvolvidos;
+- contato e link para o GitHub;
+- suporte aos idiomas português e inglês;
+- layout responsivo.
 
 ## Tecnologias usadas
 
@@ -29,7 +29,7 @@ python -m http.server
 ```
 
 > [!TIP]
-> Caso você use o _VS Code_, é possível rodar o site localmente com a extensão **Live Server**
+> Caso você use o **VS Code**, é possível rodar o site localmente com a extensão **Live Server**
 
 Depois, acesse `http://localhost:8000`.
 
@@ -47,4 +47,4 @@ Depois, acesse `http://localhost:8000`.
 
 ## Licença
 
-Este projeto está disponível sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está disponível sob a licença _MIT_. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
