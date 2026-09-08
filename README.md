@@ -1,17 +1,17 @@
 # Meu Portfólio
 
-Meu site pessoal e portfólio.
+Site pessoal e portfólio.
 
 ## Sobre o projeto
 
 O site apresenta:
 
-- informações sobre Davi;
-- tecnologias e ferramentas estudadas;
-- projetos desenvolvidos;
-- contato e link para o GitHub;
-- suporte aos idiomas português e inglês;
-- layout responsivo com tema escuro.
+- informações sobre mim
+- tecnologias e ferramentas estudadas
+- projetos desenvolvidos
+- contato e link para o GitHub
+- suporte aos idiomas português e inglês
+- layout responsivo com tema escuro
 
 ## Tecnologias usadas
 
@@ -29,7 +29,7 @@ python -m http.server
 ```
 
 > [!TIP]
-> Caso você use a IDE `VS Code`, é possível rodar o site localmente com a extensão `Live Server`
+> Caso você use o _VS Code_, é possível rodar o site localmente com a extensão **Live Server**
 
 Depois, acesse `http://localhost:8000`.
 
