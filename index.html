@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfólio de Davi, estudante de Informática interessado em desenvolvimento web, backend e Python."
+    />
+
+    <title>Davi Furtado | Portfólio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Davi Furtado</a>
+        <button
+          class="navbar-toggler border-secondary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-pt="Sobre" data-en="About"
+                >Sobre</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#skills"
+                data-pt="Tecnologias"
+                data-en="Technologies"
+                >Tecnologias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#projects"
+                data-pt="Projetos"
+                data-en="Projects"
+                >Projetos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contact"
+                data-pt="Contato"
+                data-en="Contact"
+                >Contato</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  id="language"
+                  class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-2"
+                  type="button"
+                  aria-expanded="false"
+                  aria-label="Idioma"
+                >
+                  <img
+                    src="assets/flags/brazil.svg"
+                    alt=""
+                    width="20"
+                    height="14"
+                  />
+                  <span>PT</span>
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-end bg-dark border-secondary"
+                >
+                  <li>
+                    <button
+                      class="dropdown-item language-option text-light d-flex align-items-center gap-2"
+                      type="button"
+                      data-language="pt"
+                    >
+                      <img
+                        src="assets/flags/brazil.svg"
+                        alt=""
+                        width="20"
+                        height="14"
+                      />
+                      <span>Português</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item language-option text-light d-flex align-items-center gap-2"
+                      type="button"
+                      data-language="en"
+                    >
+                      <img
+                        src="assets/flags/united-states.svg"
+                        alt=""
+                        width="20"
+                        height="14"
+                      />
+                      <span>English</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-8">
+            <p
+              class="accent student-label fw-semibold mb-3"
+              data-pt="ESTUDANTE DE INFORMÁTICA"
+              data-en="INFORMATION TECHNOLOGY STUDENT"
+            >
+              ESTUDANTE DE INFORMÁTICA
+            </p>
+            <div style="display: flex">
+              <h1
+                class="fw-bold mb-4"
+                data-pt="Olá, eu sou o Davi!"
+                data-en="Hello, I'm Davi!"
+              >
+                Olá, eu sou o Davi!
+              </h1>
+              <h1>
+                <span aria-hidden="true">👋</span>
+              </h1>
+            </div>
+            <p
+              class="lead hero-text mb-4 fw-semibold"
+              data-pt="Tenho interesse em desenvolvimento web, desenvolvimento backend e Python. Estou construindo minhas habilidades por meio de projetos, estudos e experiências práticas."
+              data-en="I am interested in web development, backend development, and Python. I am building my skills through projects, study, and hands-on experience."
+            >
+              Tenho interesse em desenvolvimento web, desenvolvimento backend e
+              Python. Estou construindo minhas habilidades por meio de projetos,
+              estudos e experiências práticas.
+            </p>
+            <a
+              class="btn btn-primary btn-lg"
+              href="#projects"
+              data-pt="Conheça meus projetos"
+              data-en="Explore my projects"
+              >Conheça meus projetos</a
+            >
+          </div>
+          <div class="col-lg-4 text-center">
+            <img
+              src="assets/me.jpg"
+              class="img-fluid rounded-circle border border-3 border-primary shadow"
+              alt="Foto de Davi"
+              width="280"
+              height="280"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="container py-5">
+        <h2 class="section-title" data-pt="Sobre mim" data-en="About me">
+          Sobre mim
+        </h2>
+        <p
+          class="lead text-muted col-lg-9 fw-semibold"
+          data-pt="Sou estudante do 2º ano do Curso Técnico em Informática Integrado ao Ensino Médio. Atualmente estou aprofundando meus conhecimentos em desenvolvimento web, com foco no front-end e no back-end."
+          data-en="I am a second-year student in a technical high school program in Information Technology. I am currently deepening my knowledge of web development, focusing on both front end and back end."
+        >
+          Sou estudante do 2º ano do Curso Técnico em Informática Integrado ao
+          Ensino Médio. Atualmente estou aprofundando meus conhecimentos em
+          desenvolvimento web, com foco no front-end e no back-end.
+        </p>
+      </section>
+
+      <section id="skills" class="container py-5">
+        <h2
+          class="section-title"
+          data-pt="Tecnologias e ferramentas"
+          data-en="Technologies and tools"
+        >
+          Tecnologias e ferramentas
+        </h2>
+        <div class="technology-panel rounded-3 border p-4">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <h3
+                class="h5"
+                data-pt="Programação e desenvolvimento"
+                data-en="Programming and development"
+              >
+                Programação e desenvolvimento
+              </h3>
+              <div class="mt-3">
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/python.svg" alt="" />Python</span
+                >
+                <span class="badge badge-tech"
+                  ><img
+                    src="assets/icons/javascript.svg"
+                    alt=""
+                  />JavaScript</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/html5.svg" alt="" />HTML5</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/css3.svg" alt="" />CSS3</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/react.svg" alt="" />React</span
+                >
+                <span class="badge badge-tech"
+                  ><img
+                    src="assets/icons/bootstrap.svg"
+                    alt=""
+                  />Bootstrap</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/fastapi.svg" alt="" />FastAPI</span
+                >
+                <span class="badge badge-tech">SQLAlchemy</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h3
+                class="h5"
+                data-pt="Dados e formatos"
+                data-en="Data and formats"
+              >
+                Dados e formatos
+              </h3>
+              <div class="mt-3">
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/pandas.svg" alt="" />Pandas</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/json.svg" alt="" />JSON</span
+                >
+                <span class="badge badge-tech">CSV</span>
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/markdown.svg" alt="" />Markdown</span
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h3 class="h5" data-pt="Bancos de dados" data-en="Databases">
+                Bancos de dados
+              </h3>
+              <div class="mt-3">
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/mysql.svg" alt="" />MySQL</span
+                >
+                <span class="badge badge-tech"
+                  ><img
+                    src="assets/icons/postgresql.svg"
+                    alt=""
+                  />PostgreSQL</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/sqlite.svg" alt="" />SQLite</span
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h3 class="h5" data-pt="Ferramentas" data-en="Tools">
+                Ferramentas
+              </h3>
+              <div class="mt-3">
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/git.svg" alt="" />Git</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/github.svg" alt="" />GitHub</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/vscode.svg" alt="" />VS Code</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/obsidian.svg" alt="" />Obsidian</span
+                >
+                <span class="badge badge-tech"
+                  ><img src="assets/icons/notion.svg" alt="" />Notion</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learning" class="container py-5">
+        <h2
+          class="section-title"
+          data-pt="Quero aprender futuramente"
+          data-en="Future learning goals"
+        >
+          Quero aprender futuramente
+        </h2>
+        <div class="technology-panel rounded-3 border p-4">
+          <span class="badge badge-tech"
+            ><img src="assets/icons/docker.svg" alt="" />Docker</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/tailwindcss.svg" alt="" />Tailwind CSS</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/typescript.svg" alt="" />TypeScript</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/nextjs.svg" alt="" />Next.js</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/materialui.svg" alt="" />Material UI</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/astro.svg" alt="" />Astro</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/docusaurus.svg" alt="" />Docusaurus</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/reactnative.svg" alt="" />React Native</span
+          >
+          <span class="badge badge-tech"
+            ><img src="assets/icons/electron.svg" alt="" />Electron</span
+          >
+        </div>
+      </section>
+
+      <section id="projects" class="container py-5">
+        <h2 class="section-title" data-pt="Projetos" data-en="Projects">
+          Projetos
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card">
+              <div class="card-body d-flex flex-column">
+                <div class="project-icon mb-3">🔤</div>
+                <h3 class="h4 card-title">LETRIMAX</h3>
+                <p
+                  class="card-text"
+                  data-pt="Jogo inspirado no Wordle: descubra uma palavra secreta de cinco letras em até seis tentativas, com indicações visuais para letras corretas e posições incorretas. Desenvolvido em Python."
+                  data-en="A Wordle-inspired game: discover a secret five-letter word in up to six attempts, with visual clues for correct letters and incorrect positions. Built with Python."
+                >
+                  Jogo inspirado no Wordle: descubra uma palavra secreta de
+                  cinco letras em até seis tentativas, com indicações visuais
+                  para letras corretas e posições incorretas. Desenvolvido em
+                  Python.
+                </p>
+                <a
+                  class="btn btn-outline-info mt-auto align-self-start"
+                  href="https://github.com/davi-furtado/LETRIMAX"
+                  target="_blank"
+                  rel="noopener"
+                  data-pt="Ver projeto"
+                  data-en="View project"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card">
+              <div class="card-body d-flex flex-column">
+                <div class="project-icon mb-3">💻</div>
+                <h3
+                  class="h4 card-title"
+                  data-pt="Este portfólio"
+                  data-en="This portfolio"
+                >
+                  Este portfólio
+                </h3>
+                <p
+                  class="card-text"
+                  data-pt="Site pessoal responsivo desenvolvido com HTML, CSS e Bootstrap, com modo escuro, suporte a português e inglês e apresentação dos meus projetos e tecnologias."
+                  data-en="Responsive personal website built with HTML, CSS, and Bootstrap, featuring a dark theme, Portuguese and English support, and an overview of my projects and technologies."
+                >
+                  Site pessoal responsivo desenvolvido com HTML, CSS e
+                  Bootstrap, com modo escuro, suporte a português e inglês e
+                  apresentação dos meus projetos e tecnologias.
+                </p>
+                <a
+                  class="btn btn-outline-info mt-auto align-self-start"
+                  href="https://github.com/davi-furtado/davi-furtado.github.io"
+                  target="_blank"
+                  rel="noopener"
+                  data-pt="Ver projeto"
+                  data-en="View project"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card">
+              <div class="card-body d-flex flex-column">
+                <div class="project-icon mb-3">📊</div>
+                <h3
+                  class="h4 card-title"
+                  data-pt="Minicurso de Pandas"
+                  data-en="Pandas Mini-course"
+                >
+                  Minicurso de Pandas
+                </h3>
+                <p
+                  class="card-text"
+                  data-pt="Material introdutório sobre análise e manipulação de dados com Python e Pandas, cobrindo DataFrames, planilhas, seleção, limpeza, agrupamento e combinação de dados."
+                  data-en="Introductory material about data analysis and manipulation with Python and Pandas, covering DataFrames, spreadsheets, selection, cleaning, grouping, and combining data."
+                >
+                  Material introdutório sobre análise e manipulação de dados com
+                  Python e Pandas, cobrindo DataFrames, planilhas, seleção,
+                  limpeza, agrupamento e combinação de dados.
+                </p>
+                <a
+                  class="btn btn-outline-info mt-auto align-self-start"
+                  href="https://github.com/davi-furtado/minicurso-pandas"
+                  target="_blank"
+                  rel="noopener"
+                  data-pt="Ver projeto"
+                  data-en="View project"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card">
+              <div class="card-body d-flex flex-column">
+                <div class="project-icon mb-3">📖</div>
+                <h3 class="h4 card-title">Wiki Romântica</h3>
+                <p
+                  class="card-text"
+                  data-pt="Wiki educacional sobre as três gerações do Romantismo em verso no Brasil, criada como trabalho escolar com HTML, CSS e Bootstrap e publicada no GitHub Pages."
+                  data-en="An educational wiki about the three generations of Brazilian Romantic poetry, created as a school project with HTML, CSS, and Bootstrap and published on GitHub Pages."
+                >
+                  Wiki educacional sobre as três gerações do Romantismo em verso
+                  no Brasil, criada como trabalho escolar com HTML, CSS e
+                  Bootstrap e publicada no GitHub Pages.
+                </p>
+                <a
+                  class="btn btn-outline-info mt-auto align-self-start"
+                  href="https://github.com/davi-furtado/wiki-romantica"
+                  target="_blank"
+                  rel="noopener"
+                  data-pt="Ver projeto"
+                  data-en="View project"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card">
+              <div class="card-body d-flex flex-column">
+                <div class="project-icon mb-3">🌳</div>
+                <h3 class="h4 card-title">Pyletree</h3>
+                <p
+                  class="card-text"
+                  data-pt="Biblioteca e ferramenta de linha de comando em Python para gerar árvores de diretórios, com filtros, suporte a .gitignore, ordenação, tamanhos, saída JSON e API Python."
+                  data-en="A Python library and command-line tool for generating directory trees, with filters, .gitignore support, sorting, sizes, JSON output, and a Python API."
+                >
+                  Biblioteca e ferramenta de linha de comando em Python para
+                  gerar árvores de diretórios, com filtros, suporte a
+                  .gitignore, ordenação, tamanhos, saída JSON e API Python.
+                </p>
+                <a
+                  class="btn btn-outline-info mt-auto align-self-start"
+                  href="https://github.com/davi-furtado/pyletree"
+                  target="_blank"
+                  rel="noopener"
+                  data-pt="Ver projeto"
+                  data-en="View project"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card">
+              <div class="card-body d-flex flex-column">
+                <div class="project-icon mb-3">⚛️</div>
+                <h3 class="h4 card-title">Algoritmo Físico</h3>
+                <p
+                  class="card-text"
+                  data-pt="Projeto educacional que reconhece blocos físicos com marcadores ArUco, reconstrói pseudocódigo, converte-o para Python e exibe a saída. Inclui API FastAPI, interface React/Vite e interface desktop CustomTkinter."
+                  data-en="An educational project that recognizes physical blocks with ArUco markers, reconstructs pseudocode, converts it to Python, and displays the output. It includes a FastAPI API, React/Vite interface, and CustomTkinter desktop interface."
+                >
+                  Projeto educacional que reconhece blocos físicos com
+                  marcadores ArUco, reconstrói pseudocódigo, converte-o para
+                  Python e exibe a saída. Inclui API FastAPI, interface
+                  React/Vite e interface desktop CustomTkinter.
+                </p>
+                <a
+                  class="btn btn-outline-info mt-auto align-self-start"
+                  href="https://github.com/davi-furtado/algoritmo-fisico"
+                  target="_blank"
+                  rel="noopener"
+                  data-pt="Ver projeto"
+                  data-en="View project"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card">
+              <div class="card-body d-flex flex-column">
+                <div class="project-icon mb-3">✨</div>
+                <h3
+                  class="h4 card-title"
+                  data-pt="Algo novo vem por aí..."
+                  data-en="Something new is coming..."
+                >
+                  Algo novo vem por aí...
+                </h3>
+                <p
+                  class="card-text"
+                  data-pt="Estou trabalhando em novas ideias e projetos. Em breve, mais novidades estarão disponíveis por aqui."
+                  data-en="I am working on new ideas and projects. More updates will be available here soon."
+                >
+                  Estou trabalhando em novas ideias e projetos. Em breve, mais
+                  novidades estarão disponíveis por aqui.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="container-fluid py-5 text-center">
+      <p class="mb-1" data-pt="📫 Entre em contato" data-en="📫 Get in touch">
+        📫 Entre em contato
+      </p>
+      <a class="footer-email accent" href="mailto:davifurtado.r@gmail.com"
+        >davifurtado.r@gmail.com</a
+      >
+      <a
+        class="github-link d-inline-flex align-items-center gap-2 mt-3"
+        href="https://github.com/davi-furtado"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src="assets/icons/github.svg"
+          alt=""
+          width="24"
+          height="24"
+          aria-hidden="true"
+        />
+        <span>github.com/davi-furtado</span>
+      </a>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
