@@ -52,6 +52,8 @@ h4,
 
 .nav-link:hover,
 .nav-link:focus,
+.navbar-brand:hover,
+.navbar-brand:focus,
 .accent {
   color: var(--portfolio-accent) !important;
 }
