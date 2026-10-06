@@ -22,7 +22,7 @@ O site apresenta:
 
 ## Como executar
 
-Como este é um site estático, não é necessário instalar dependências. Abra o arquivo `index.html` no navegador ou inicie um servidor local na pasta do projeto:
+Como este é um site estático, não é necessário instalar dependências. O Bootstrap é mantido localmente em `css/bootstrap.min.css` e `js/bootstrap.bundle.min.js`. Abra o arquivo `index.html` no navegador ou inicie um servidor local na pasta do projeto:
 
 ```bash
 python -m http.server
@@ -48,3 +48,4 @@ Depois, acesse `http://localhost:8000`.
 ## Licença
 
 Este projeto está disponível sob a licença _MIT_. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
