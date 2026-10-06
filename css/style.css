@@ -190,3 +190,6 @@ footer {
 .github-link:focus {
   color: #ffffff;
 }
+.hero-title {
+  display: flex;
+}
