@@ -1,7 +1,9 @@
 const language = document.getElementById('language')
 const translatable = document.querySelectorAll('[data-pt][data-en]')
 const languageOptions = document.querySelectorAll('.language-option')
-const languageMenu = language.closest('.dropdown').querySelector('.dropdown-menu')
+const languageMenu = language
+  .closest('.dropdown')
+  .querySelector('.dropdown-menu')
 const languageLabels = {
   pt: { code: 'PT', name: 'Português', flag: 'assets/flags/brazil.svg' },
   en: { code: 'EN', name: 'English', flag: 'assets/flags/united-states.svg' }
@@ -9,7 +11,7 @@ const languageLabels = {
 
 function setLanguage(value) {
   document.documentElement.lang = value === 'pt' ? 'pt-BR' : 'en'
-  translatable.forEach(element => {
+  translatable.forEach((element) => {
     element.textContent = element.dataset[value]
   })
   const selectedLanguage = languageLabels[value]
@@ -21,7 +23,7 @@ function setLanguage(value) {
   localStorage.setItem('portfolio-language', value)
 }
 
-languageOptions.forEach(option => {
+languageOptions.forEach((option) => {
   option.addEventListener('click', () => {
     setLanguage(option.dataset.language)
     languageMenu.classList.remove('show')
@@ -34,7 +36,7 @@ language.addEventListener('click', () => {
   language.setAttribute('aria-expanded', String(isOpen))
 })
 
-document.addEventListener('click', event => {
+document.addEventListener('click', (event) => {
   if (!language.closest('.dropdown').contains(event.target)) {
     languageMenu.classList.remove('show')
     language.setAttribute('aria-expanded', 'false')
