@@ -14,7 +14,17 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+    <a
+      class="skip-link"
+      href="#main"
+      data-pt="Ir para o conteúdo"
+      data-en="Skip to content"
+      >Ir para o conteúdo</a
+    >
+    <nav
+      class="navbar navbar-expand-lg sticky-top border-bottom"
+      aria-label="Principal"
+    >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#home">Davi Furtado</a>
         <button
@@ -69,7 +79,9 @@
                   class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-2"
                   type="button"
                   aria-expanded="false"
-                  aria-label="Idioma"
+                  aria-haspopup="true"
+                  aria-controls="languageMenu"
+                  aria-label="Idioma: Português"
                 >
                   <img
                     src="assets/flags/brazil.svg"
@@ -80,6 +92,7 @@
                   <span>PT</span>
                 </button>
                 <ul
+                  id="languageMenu"
                   class="dropdown-menu dropdown-menu-end bg-dark border-secondary"
                 >
                   <li>
@@ -118,6 +131,7 @@
           </ul>
         </div>
       </div>
+      <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     </nav>
 
     <header id="home" class="hero">
@@ -125,21 +139,21 @@
         <div class="row align-items-center g-5">
           <div class="col-lg-8">
             <p
-              class="accent student-label fw-semibold mb-3"
-              data-pt="ESTUDANTE DE INFORMÁTICA"
-              data-en="INFORMATION TECHNOLOGY STUDENT"
+              class="status mb-4"
+              data-pt="Estudante de Informática"
+              data-en="Information Technology student"
             >
-              ESTUDANTE DE INFORMÁTICA
+              Estudante de Informática
             </p>
-            <div class="hero-title">
+            <div class="hero-title mb-4">
               <h1
-                class="fw-bold mb-4"
+                class="fw-bold m-0"
                 data-pt="Olá, eu sou o Davi!"
                 data-en="Hello, I'm Davi!"
               >
                 Olá, eu sou o Davi!
               </h1>
-              <span class="fs-1" aria-hidden="true">👋</span>
+              <span class="fs-1 wave" aria-hidden="true">👋</span>
             </div>
             <p
               class="lead hero-text mb-4 fw-semibold"
@@ -158,20 +172,25 @@
               >Conheça meus projetos</a
             >
           </div>
-          <div class="col-lg-4 text-center">
-            <img
-              src="assets/me.jpg"
-              class="img-fluid rounded-circle border border-3 border-primary shadow"
-              alt="Foto de Davi"
-              width="280"
-              height="280"
-            />
+          <div class="col-lg-4">
+            <div class="portrait">
+              <img
+                src="assets/me.jpg"
+                alt="Foto de Davi"
+                width="320"
+                height="320"
+              />
+              <div class="code-card" aria-hidden="true">
+                <div class="bar"><i></i><i></i><i></i></div>
+                <pre><span class="ln" style="--i:0"><span class="k">class</span> Davi:</span><span class="ln" style="--i:1">  stack = [<span class="s">"Python"</span>,</span><span class="ln" style="--i:2">           <span class="s">"Web"</span>, <span class="s">"APIs"</span>]</span><span class="ln" style="--i:3">  <span class="c"># sempre aprendendo</span></span><span class="ln" style="--i:4">  status = <span class="s">"build"</span><span class="caret"></span></span></pre>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
       <section id="about" class="container py-5">
         <h2 class="section-title" data-pt="Sobre mim" data-en="About me">
           Sobre mim
@@ -422,7 +441,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">🔤</div>
+                <div class="project-icon mb-3" aria-hidden="true">🔤</div>
                 <h3 class="h4 card-title">LETRIMAX</h3>
                 <p
                   class="card-text"
@@ -449,7 +468,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">💻</div>
+                <div class="project-icon mb-3" aria-hidden="true">💻</div>
                 <h3
                   class="h4 card-title"
                   data-pt="Este portfólio"
@@ -481,7 +500,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">📊</div>
+                <div class="project-icon mb-3" aria-hidden="true">📊</div>
                 <h3
                   class="h4 card-title"
                   data-pt="Minicurso de Pandas"
@@ -513,7 +532,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">📖</div>
+                <div class="project-icon mb-3" aria-hidden="true">📖</div>
                 <h3 class="h4 card-title">Wiki Romântica</h3>
                 <p
                   class="card-text"
@@ -550,7 +569,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">🌳</div>
+                <div class="project-icon mb-3" aria-hidden="true">🌳</div>
                 <h3 class="h4 card-title">PyleTree</h3>
                 <p
                   class="card-text"
@@ -587,8 +606,12 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">⚛️</div>
-                <h3 class="h4 card-title" data-pt="Algoritmo Físico" data-en="Physical Algorithm">
+                <div class="project-icon mb-3" aria-hidden="true">⚛️</div>
+                <h3
+                  class="h4 card-title"
+                  data-pt="Algoritmo Físico"
+                  data-en="Physical Algorithm"
+                >
                   Algoritmo Físico
                 </h3>
                 <p
@@ -616,7 +639,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">🏋️</div>
+                <div class="project-icon mb-3" aria-hidden="true">🏋️</div>
                 <h3 class="h4 card-title">PDFit</h3>
                 <p
                   class="card-text"
@@ -653,7 +676,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">🚀</div>
+                <div class="project-icon mb-3" aria-hidden="true">🚀</div>
                 <h3
                   class="h4 card-title"
                   data-pt="Minicurso de FastAPI"
@@ -684,7 +707,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">📊</div>
+                <div class="project-icon mb-3" aria-hidden="true">📊</div>
                 <h3
                   class="h4 card-title"
                   data-pt="Faltômetro"
@@ -697,8 +720,8 @@
                   data-pt="Calculadora web para analisar a frequência escolar a partir de faltas, aulas dadas e aulas totais, com limite de faltas personalizável."
                   data-en="Web calculator for analyzing school attendance from absences, classes held, and total classes, with a customizable absence limit."
                 >
-                  Calculadora web para analisar a frequência escolar a partir
-                  de faltas, aulas dadas e aulas totais, com limite de faltas
+                  Calculadora web para analisar a frequência escolar a partir de
+                  faltas, aulas dadas e aulas totais, com limite de faltas
                   personalizável.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-auto align-self-start">
@@ -727,16 +750,17 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">📥</div>
+                <div class="project-icon mb-3" aria-hidden="true">📥</div>
                 <h3 class="h4 card-title">YouTube Downloader</h3>
                 <p
                   class="card-text"
-                  data-pt="Script interativo em Python para baixar vídeos individuais ou playlists do YouTube, com seleção de qualidade, suporte a arquivos de links e organização automática dos downloads."
-                  data-en="Interactive Python script for downloading individual YouTube videos or playlists, with quality selection, link-file support, and automatic download organization."
+                  data-pt="Script interativo em Python com yt-dlp para baixar vídeos (MP4) ou áudios (M4A com capa) do YouTube, individuais ou em playlists, com leitura de links por arquivo ou terminal, pastas organizadas e até três downloads simultâneos."
+                  data-en="Interactive Python script built on yt-dlp for downloading YouTube videos (MP4) or audio (M4A with cover art), individually or as playlists, reading links from a file or the terminal, with organized folders and up to three concurrent downloads."
                 >
-                  Script interativo em Python para baixar vídeos individuais ou
-                  playlists do YouTube, com seleção de qualidade, suporte a
-                  arquivos de links e organização automática dos downloads.
+                  Script interativo em Python com yt-dlp para baixar vídeos
+                  (MP4) ou áudios (M4A com capa) do YouTube, individuais ou em
+                  playlists, com leitura de links por arquivo ou terminal,
+                  pastas organizadas e até três downloads simultâneos.
                 </p>
                 <a
                   class="btn btn-outline-info mt-auto align-self-start"
@@ -753,7 +777,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">📚</div>
+                <div class="project-icon mb-3" aria-hidden="true">📚</div>
                 <h3 class="h4 card-title">PPR Courses Downloader</h3>
                 <p
                   class="card-text"
@@ -779,7 +803,7 @@
           <div class="col-md-6 col-xl-4">
             <article class="card project-card">
               <div class="card-body d-flex flex-column">
-                <div class="project-icon mb-3">✨</div>
+                <div class="project-icon mb-3" aria-hidden="true">✨</div>
                 <h3
                   class="h4 card-title"
                   data-pt="Algo novo vem por aí..."

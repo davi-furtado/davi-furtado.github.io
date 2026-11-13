@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "prepare-assets": "node scripts/copy-assets.js",
-    "format": "biome format --write .",
-    "lint": "biome lint .",
-    "check": "biome check ."
+    "postinstall": "node scripts/copy-assets.js",
+    "format": "prettier --write .",
+    "check": "prettier --check ."
   },
   "dependencies": {
     "bootstrap": "^5.3.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.14"
+    "prettier": "^3.10.1"
   }
 }

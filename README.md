@@ -48,4 +48,3 @@ Depois, acesse `http://localhost:8000`.
 ## Licença
 
 Este projeto está disponível sob a licença _MIT_. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
